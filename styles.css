@@ -1,0 +1,99 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    background-image: url('trashbot-background.png'); /* Replace with your robot's image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #callButton {
+    padding: 10px 70px;
+    font-size: 1em;
+    color: rgb(17, 22, 28);
+    background-color: #ffffff; 
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px #999;
+    /* ...其他样式... */
+    position: absolute; /* 绝对定位 */
+    left: 50%; /* 水平方向放在中间 */
+    top: 90%; /* 垂直方向放在中间 */
+    transform: translate(-50%, -50%); 使用transform来精确居中
+  }
+  
+  #callButton:hover {
+    background-color: #45a049;
+  }
+  
+  #callButton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 2px #666;
+    transform: translateY(0px);
+  }
+  
+
+
+  #version2Button {
+    position: absolute; /* 绝对定位 */
+    left: 45%; /* 水平方向放在中间 */
+    top: 18%; /* 垂直方向放在中间 */
+    padding: 8px 10px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color:  rgba(17, 22, 28, 0.688); /* Bootstrap的主题蓝色 */
+    text-decoration: none; /* 去掉下划线 */
+    border-radius: 15px; /* 圆角边框 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* 阴影效果 */
+    transform: translate(-50%, -50%); 使用transform来精确居中
+  }
+  
+  #version2Button:hover {
+    background-color: #3e8e41; /* 鼠标悬停时的颜色变化 */
+  }
+  
+
+
+  #version3Button {
+    position: absolute; /* 绝对定位 */
+    left: 55%; /* 水平方向放在中间 */
+    top: 18%; /* 垂直方向放在中间 */
+    padding: 8px 10px;
+    font-size: 1em;
+    color: white;
+    background-color: rgba(17, 22, 28, 0.673); /* Bootstrap的绿色 */
+    text-decoration: none; /* 去掉下划线 */
+    border-radius: 15px; /* 圆角边框 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* 阴影效果 */
+    transform: translate(-50%, -50%); 使用transform来精确居中
+  }
+  
+  #version3Button:hover {
+    background-color: #218838; /* 鼠标悬停时的颜色变化 */
+  }
+  
+
+  #robotIconLink {
+    position: fixed; /* 或者 fixed，取决于你是否希望它在滚动时固定 */
+    top: 100px; /* 距离顶部20px */
+    position: absolute; /* 绝对定位 */
+    left: 50%; /* 水平方向放在中间 */
+    display: inline-block; /* 使链接像块元素一样布局 */
+    transform: translate(-50%, -50%); 使用transform来精确居中
+  }
+  
+  #robotIconLink img {
+    width: 30px; /* 或者你希望的任何尺寸 */
+    height: auto; /* 保持图像比例 */
+    fill: rgba(255, 255, 255, 0); /* 如果是SVG，可以直接设置填充颜色 */
+  }
+  
