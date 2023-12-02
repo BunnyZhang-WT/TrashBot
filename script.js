@@ -3,7 +3,7 @@
 // const tableId = queryParams.get('table_id'); // 获取table_id参数
 
 var ros = new ROSLIB.Ros({
-  url: 'ws://172.20.10.5:9090'
+  url: 'wss://172.20.10.5:9090'
 });
 
 ros.on('connection', function () {
